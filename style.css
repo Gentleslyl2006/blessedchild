@@ -1,0 +1,430 @@
+:root{
+    --purple: #5B2D8E;
+    --navy: #14245F;
+    --lime-green: #A4CC39;
+    --page-background: #F7F5FB;
+    --white-color: #FFFFFF;
+    --light-purple: #E6DCF2;
+    --hero-photo-box: #7A4BB0;
+    --footer-navy: #0E1A47;
+    --hero-purple-text: #D9C9EE;
+    --footer-text: #C9D0EA;
+    --pre-nursery-class-card: #14245F;
+    --nursery-class-card: #C2185B;
+    --basic-class-card: #2E7D32;
+    --jss-class-card: #B45309;
+    --sss-class-card: #5B2D8E;
+    --waec-preparation-card: #B3261E;
+    --heading-font: 'Fredoka', sans-serif;
+    --body-font: 'Nunito', sans-serif;
+}
+
+/* Browser scrollbar removal */
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* image rules */
+img{
+    width: 100%;
+    display: block;
+    border-radius: 3rem;
+}
+
+html{
+    background-color: var(--page-background);
+    font-size: 100%;
+    font-family: var(--body-font);
+    scroll-behavior: smooth;
+}
+
+/* Nav bar */
+#nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+#nav div{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 2rem;
+}
+
+#nav div p{
+    color: var(--navy);
+    margin: 0.6rem 0 0;
+    color: var(--navy);
+}
+
+#nav div H1{
+    color: var(--purple);
+    font-family: var(--heading-font);
+}
+
+#nav ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0 2rem;
+}
+
+#nav ul a{
+    text-decoration: none;
+    color: var(--navy);
+}
+
+#nav ul a:hover{
+    color: var(--purple);
+}
+
+/* header */
+main{
+    background-color: var(--light-purple);
+}
+
+#header-contents{
+    background-color: var(--purple);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 3rem;
+}
+
+#header-contents h3{
+    background-color: var(--lime-green);
+    color: var(--navy);
+    border: none;
+    border-radius: 0.8rem;
+    padding: 0.5rem 0.5rem;
+    margin: 0rem 0 1rem ;
+    text-align: center;
+    display: inline-block;
+    font-size: 0.55rem;
+}
+
+#header-contents h2{
+    color: var(--white-color);
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    margin: 0 0 1rem;
+}
+
+#header-contents p{
+    color: var(--white-color);
+    font-size: 0.8rem;
+    margin: 0 0 1rem;
+    line-height: 1.6;
+}
+#header-contents span{
+    color: var(--hero-purple-text);
+    font-size: 0.8rem;
+}
+
+#hero-btns{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#whatsapp-link{
+    background-color: var(--lime-green);
+    color: var(--navy);
+}
+
+#apply-link{
+    background-color: transparent;
+    color: var(--white-color);
+    border: 0.13rem solid var(--white-color);
+    }
+
+/* Class section */
+#h3 h3{
+    margin: 3rem 3rem 1rem;
+    font-size: 2rem;
+    color: var(--navy);
+}
+
+#classes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 3rem;
+}
+
+#class1{
+    background-color: var(--pre-nursery-class-card);
+    color: var(--white-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    font-size: 0.75rem;
+}
+#class2{
+    background-color: var(--nursery-class-card);
+    color: var(--white-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    font-size: 0.75rem;
+}
+#class3{
+    background-color: var(--basic-class-card);
+    color: var(--white-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    font-size: 0.75rem;
+}
+#class4{
+    background-color: var(--jss-class-card);
+    color: var(--white-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    font-size: 0.75rem;
+}
+#class5{
+    background-color: var(--sss-class-card);
+    color: var(--white-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    font-size: 0.75rem;
+}
+#class6{
+    background-color: var(--waec-preparation-card);
+    color: var(--white-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    font-size: 0.75rem;
+}
+
+/* About section */
+#about{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 3rem; 
+}
+
+#about-wright-up{
+    margin: 0 0 6rem;
+}
+
+#about-wright-up h3{
+    margin: 1rem 2rem 0 0;
+    font-size: 2rem;
+    color: var(--navy);
+    text-align: center;
+}
+
+#about-wright-up p{
+    max-width: 55ch;
+    line-height: 1.6;
+    color: var(--navy);
+}
+
+#application{
+    margin: 3rem 3rem;
+    line-height: 1.6;
+    color: var(--navy);
+}
+
+#application h3{
+    color: var(--navy);
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    color: var(--navy);
+}
+
+#application ul{
+    list-style: none;
+}
+
+#application-enquiries-btn{
+    background-color: var(--purple);
+    color: var(--white-color);
+    margin: 1rem 0 0;
+}
+
+/* Dark section */
+#dark-section{
+    background: var(--footer-navy);
+    padding: 1rem;
+}
+
+#life-section{
+    background-color: var(--light-purple);
+    padding: 3rem 3rem;
+    margin: 3rem 0 0;
+}
+
+#life-section h3{
+    color: var(--navy);
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+#life {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    line-height: 1.6;
+    padding: 1rem 0 0;
+}
+
+/* Contact section */
+#contact{
+    background-color: var(--navy);
+    padding: 3rem 3rem;
+}
+
+#contact h3{
+    color: var(--white-color);
+    margin: 0 0 1rem;
+    font-size: 2rem;
+}
+
+#locations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+#locations h4{
+    color: var(--lime-green);
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+#locations i{
+    color: var(--lime-green);
+    margin: 0 0.5rem 0 0;
+}
+
+#locations a{
+    color: var(--white-color);
+    margin: 0 0 1rem;
+    text-decoration: none;
+}
+
+#contact-whatsapp-link{
+    background-color: var(--lime-green);
+    color: var(--navy);
+    margin: 1rem 0 0;
+}
+
+/* footer */
+#footer{
+    background-color: var(--footer-navy);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+
+#whatsapp-link, #apply-link, #application-enquiries-btn, #contact-whatsapp-link{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+/* Blocks div */
+#header-contents div{
+    flex: 1 1 20rem;
+}
+
+#about div{
+    flex: 1 1 20rem;
+}
+
+#classes div{
+   flex: 1 1 8rem; 
+}
+
+#life div{
+    flex: 1 1 30rem;
+}
+
+#locations div{
+    flex: 1 1 12rem;
+}
+
+/* for tablets and laptops zooms */
+@media (max-width: 62rem){
+    #nav{
+        justify-content: center;
+        text-align: center;
+    }
+    #nav div, #nav ul{
+        padding: 0 1rem;
+    }
+
+    #about{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header-contents{
+        padding: 2rem 1.5rem;
+    }
+    #h3 h3, #application, #about{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    #classes{
+        margin: 0 1.5rem;
+    }
+    #life-section, #contact{
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* for phones */
+@media (max-width: 37.5rem){
+    #nav div{
+        flex-direction: column;
+        text-align: center;
+    }
+    #nav ul{
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+    #header-contents h2{
+        font-size: 1.75rem;
+    }
+    #h3 h3, #about-wright-up h3, #application h3, #life-section h3, #contact h3{
+        font-size: 1.5rem;
+    }
+    #header-contents p, #about-wright-up p{
+        font-size: 1rem;
+    }
+    #about-wright-up{
+        margin: 0 0 2rem;
+    }
+}
