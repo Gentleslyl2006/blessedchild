@@ -17,6 +17,30 @@
     --waec-preparation-card: #B3261E;
     --heading-font: 'Fredoka', sans-serif;
     --body-font: 'Nunito', sans-serif;
+
+    /* FONT FAMILY */
+     --font-body: "Inter", Arial, sans-serif;
+     --font-heading: "Inter", Arial, sans-serif;
+
+    /* FONT SIZES */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+
+    /* SPACING */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
 }
 
 /* Browser scrollbar removal */
@@ -139,16 +163,120 @@ main{
     gap: 1rem;
 }
 
-#whatsapp-link{
+/* Registration button */
+#registration-btn{
     background-color: var(--lime-green);
     color: var(--navy);
+    border: none;
+    border-radius: 0.5rem;
+    font-family: var(--body-font);
+    font-size: var(--text-sm);
+    padding: var(--space-3) var(--space-8);
+    cursor: pointer;
+    text-decoration: none;
 }
 
-#apply-link{
+/* Login button */
+#login-btn{
     background-color: transparent;
     color: var(--white-color);
     border: 0.13rem solid var(--white-color);
-    }
+    border-radius: 0.5rem;
+    font-family: var(--body-font);
+    font-size: var(--text-sm);
+    padding: var(--space-3) var(--space-8);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Admission form */
+#h2{
+    margin-left: var(--space-12);
+}
+#admission-form1{
+    background-color: var(--light-purple);
+    border: 0.13rem solid var(--light-purple);
+    border-radius: 0.5rem;
+    padding: var(--space-4);
+    margin: var(--space-4) var(--space-12);
+    gap: var(--space-5);
+}
+
+#admission-form2{
+    background-color: var(--light-purple);
+    border: 0.13rem solid var(--light-purple);
+    border-radius: 0.5rem;
+    padding: var(--space-4);
+    margin: var(--space-4) var(--space-12);
+    gap: var(--space-5);
+}
+
+#student-details{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-1);
+}
+
+.form-group{
+    display: grid;
+    gap: var(--space-1);
+}
+
+.submit-btn a{
+    background-color: var(--purple);
+    color: var(--white-color);
+    border: none;
+    border-radius: 0.5rem;
+    font-family: var(--body-font);
+    font-size: var(--text-sm);
+    padding: var(--space-3) var(--space-8);
+    text-decoration: none;
+    margin-left: var(--space-12) ;
+    cursor: pointer;
+}
+
+.form-group input, .form-group select{
+    width: 100%;
+    padding: 0.75rem;
+    border: 0.0625rem solid #CBD5E1;
+    border-radius: 0.5rem;
+}
+
+#parent-details{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-1);
+}
+
+/* Login */
+#login{
+    width: 100%;
+    max-width: 20rem;
+    display: grid;
+    justify-content: center;
+    background-color: var(--light-purple);
+    border: 0.13rem solid var(--light-purple);
+    border-radius: 0.5rem;
+    padding: 1rem 0.01rem;
+    margin: var(--space-4) auto;
+    box-sizing: border-box;
+}
+#login h2{
+    text-align: center;
+}
+#login button{
+    background-color: var(--purple);
+    color: var(--white-color);
+    border: none;
+    border-radius: 0.5rem;
+    font-family: var(--body-font);
+    font-size: var(--text-sm);
+    padding: var(--space-3) var(--space-8);
+    text-decoration: none;
+    cursor: pointer;
+    /* margin-left: var(--space-12) ; */
+    margin-top: 1rem;
+}
 
 /* Class section */
 #h3 h3{
@@ -164,6 +292,7 @@ main{
     justify-content: space-between;
     text-align: center;
     margin: 0 3rem;
+    padding: 2rem 0;
 }
 
 #class1{
@@ -259,12 +388,6 @@ main{
     list-style: none;
 }
 
-#application-enquiries-btn{
-    background-color: var(--purple);
-    color: var(--white-color);
-    margin: 1rem 0 0;
-}
-
 /* Dark section */
 #dark-section{
     background: var(--footer-navy);
@@ -272,7 +395,6 @@ main{
 }
 
 #life-section{
-    background-color: var(--light-purple);
     padding: 3rem 3rem;
     margin: 3rem 0 0;
 }
@@ -296,6 +418,7 @@ main{
 #contact{
     background-color: var(--navy);
     padding: 3rem 3rem;
+    margin-top: var(--space-4);
 }
 
 #contact h3{
@@ -344,7 +467,7 @@ main{
     font-size: 1rem;
 }
 
-#whatsapp-link, #apply-link, #application-enquiries-btn, #contact-whatsapp-link{
+#contact-whatsapp-link{
     display: inline-block;
     font-size: 1rem;
     font-weight: 700;

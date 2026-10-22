@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blessed Child Model Group of Schools</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="./blessed_child_cropped_photos/logo.jpeg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Nav bar -->
+<nav id="nav">
+    <div>
+        <h1>BCMGS</h1>
+        <p>Blessed Child Model Group of Schools</p>
+    </div>
+        
+    <ul>
+        <li><a href="#about">About</a></li> 
+        <li><a href="#h3">Classes</a></li>
+        <li><a href="#application">Admissions</a></li>
+        <li><a href="#life-section">Gallery</a> </li>
+        <li><a href="https://maps.app.goo.gl/mWdUHJYVL1cvPnUW8" target="_blank">Location</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>         
+</nav>
+
+<!-- Admission form -->
+<h2 id="h2">Registration</h2>
+<section>
+    <div id="admission-form1">
+        <h3>Student details</h3>
+        <!-- Form -->
+        <form action="registration-form" id="student-details">
+            <div class="form-group">
+                <label for="student-name">First Name</label>
+                <input type="text" id="student-name" placeholder="Enter your first name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="surname">Surname</label>
+                <input type="text" id="student-surname" placeholder="Enter your surname" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="middle-name">Middle Name</label>
+                <input type="text" id="student-middle-name" placeholder="Enter your middle name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="date" id="student-age" placeholder="Enter your age" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select name="Select" id="gender">
+                    <option value="">Select your gender</option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="class">Class</label>
+                <select name="class" id="class" required>
+                    <option value="select">Select your class</option>
+                    <option value="jss1">JSS 1</option>
+                    <option value="">JSS 2</option>
+                    <option value="">JSS 3</option>
+                    <option value="">SSS 1</option>
+                    <option value="">SSS 2</option>
+                    <option value="">SSS 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="student-email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="student-phone-number" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="username" id="username" placeholder="Create a username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="student-password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <select name="state-of-origin" id="state" required>
+                    <option value="select">Select your state</option>
+                    <option value="Anambra">Anambra</option>
+                    <option value="Imo">Imo</option>
+                    <option value="Ebonyi">Ebonyi</option>
+                    <option value="Enugu">Enugu</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="address">Home Address</label>
+                <input type="text" id="student-[arents-home-address" placeholder="Enter your home address" required>
+            </div>
+        </form>
+    </div>
+        
+    <div id="admission-form2">
+        <!-- <div id="admission-form2"> -->
+        <h3>Parents datails</h3>
+        <form action="registration-form" id="parent-details">
+            <div class="form-group">
+                <label for="student-father-fullname">Father's Fullname</label>
+                <input type="text" id="student-father-name" placeholder="Enter your father's fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="student-mother-fullname">Mother's Fullname</label>
+                <input type="text" id="student-mother-fullname" placeholder="Enter your mother's fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Father's Phone Number</label>
+                <input type="tel" id="student-father-number" placeholder="Enter your father phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Mother's Phone Number</label>
+                <input type="tel" id="student-mother-phone-number" placeholder="Enter your mother's phone number" required>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Submission button -->
+<div class="submit-btn">
+    <a href="" target="_blank">Complete registration</a>
+</div>
+
+<!-- contact section -->
+<section id="contact">
+    <h3>Contact us</h3>
+    <div id="locations">
+        <div>
+            <h4>Campus 1</h4>
+            <a href="https://maps.app.goo.gl/mWdUHJYVL1cvPnUW8" target="_blank"><i class="fa-solid fa-location-dot"></i> No 7 Agodi Street, Nkpikpa</a>        </div>
+        <div>
+            <h4>Campus 2</h4>
+            <a href="https://maps.app.goo.gl/mWdUHJYVL1cvPnUW8" target="_blank"><i class="fa-solid fa-location-dot"></i> No 1 Santana Street, Nkpikpa</a>
+        </div>
+        <div>
+            <h4>Enquiries</h4>
+            <a href="tel:+2348033012329"><i class="fa-solid fa-phone"></i> 08033012329</a>
+        </div>
+        <div>
+            <h4>Facebook</h4>
+            <a href="https://facebook.com/groups/1033922494631477/?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook"></i></i> Blessed Child Model Group of Schools Nkpikpa Ogbaru</a>
+        </div>
+    </div>
+
+    <a id="contact-whatsapp-link" href="https://wa.me/2348033012329" target="_blank">Chat on WhatsApp</a>
+</section>
+
+<!-- footer -->
+<footer id="footer"> 
+    <p>Blessed Child Model Group of Schools. My Child is My Pride.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
